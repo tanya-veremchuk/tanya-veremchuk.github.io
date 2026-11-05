@@ -1,104 +1,185 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f4f4f4;
-            color: #222;
-        }
-
-        header {
-            background: #172554;
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        nav {
-            background: #111827;
-            padding: 15px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 15px;
-        }
-
-        section {
-            max-width: 850px;
-            margin: 30px auto;
-            padding: 25px;
-            background: white;
-            border-radius: 10px;
-        }
-
-        h2 {
-            color: #172554;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #111827;
-            color: white;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090910">
+  <meta name="description" content="Tanya's personal corner of the internet — computer science, projects, and things I'm learning.">
+  <title>Tanya's corner of internet ♡</title>
+  <link rel="icon" href="images/avatar.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
+  <button class="menu-toggle" id="menu-toggle" type="button"
+          aria-expanded="false" aria-controls="sidebar">
+    <span aria-hidden="true">☰</span> Menu
+  </button>
 
-    <header>
-        <h1>Hello, I'm Tanya!</h1>
-        <p>Welcome to my personal portfolio website.</p>
-        <p>Student r</p>
-    </header>
+  <div class="site-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Sidebar navigation">
+      <a class="site-mark" href="#top" aria-label="Back to top">
+        <span class="site-mark-icon">✳</span>
+        <span>Tanya's corner</span>
+      </a>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+      <p class="sidebar-note">a small space on the internet ♡</p>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p></p>
-    </section>
+      <nav>
+        <details class="nav-group">
+          <summary>PROJECTS</summary>
+          <div class="nav-links">
+            <a href="#project-1">Project one</a>
+            <a href="#project-2">Project two</a>
+            <a href="#project-3">Project three</a>
+          </div>
+        </details>
 
-    <section id="skills">
-        <h2>My Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-        </ul>
-    </section>
+        <details class="nav-group" open>
+          <summary>CONTENTS</summary>
+          <div class="nav-links">
+            <a href="#about">About me</a>
+            <a href="#currently">Currently</a>
+            <a href="#toolbox">Toolbox</a>
+            <a href="#setup">My setup</a>
+            <a href="#contact">Find me</a>
+          </div>
+        </details>
+      </nav>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <p>Project 1 </p>
-        <p>Project 2 </p>
-    </section>
+      <div class="sidebar-bottom">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span>online-ish, probably debugging</span>
+      </div>
+    </aside>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: </p>
-        <p>GitHub: github.com/yourusername</p>
-        <p>LinkedIn:.</p>
-    </section>
+    <main id="top" class="main-content">
+      <section class="hero" aria-labelledby="welcome-title">
+        <div class="hero-copy">
+          <p class="eyebrow">HELLO THERE · WELCOME IN</p>
+          <h1 id="welcome-title">Hei hei, welcome &lt;3</h1>
+          <p class="hero-intro">
+            I'm Tanya — a second-year computer science student who likes
+            building things, learning how they work, and occasionally
+            wondering why the code worked five minutes ago.
+          </p>
+          <div class="hero-meta">
+            <span class="pill">Computer science</span>
+            <span class="pill">Mostly code-powered</span>
+          </div>
+        </div>
 
-    <footer>
-        <p>© 2026 Tanya | My Portfolio</p>
-    </footer>
+        <figure class="avatar-frame">
+          <img src="images/avatar.svg" alt="A small pixel-art cat sitting beside a computer">
+          <figcaption>will be replaced soonish</figcaption>
+        </figure>
+      </section>
 
+      <section class="wiki-section" id="about">
+        <p class="section-kicker">ABOUT ME</p>
+        <h2>About me</h2>
+        <div class="section-with-note">
+          <div>
+            <p>
+              I'm Tanya, a second-year computer science student.
+            </p>
+            <p>
+              
+            </p>
+          </div>
+          <aside class="side-note">
+            <p>Small steps count. Even the “why is this broken?” ones.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="wiki-section" id="projects">
+        <p class="section-kicker">THINGS I'VE MADE</p>
+        <h2>Projects</h2>
+        <p class="section-lead">
+          A little shelf for experiments, coursework, and projects I'm proud of.
+          I'll add proper write-ups as I go.
+        </p>
+
+        <div class="project-grid">
+          <article class="project-card" id="project-1">
+            <div class="project-topline"><span>01</span><span class="project-symbol">⌘</span></div>
+            <h3>Project title goes here</h3>
+            <p>Write a couple of sentences about what it does, why you made it, and what you learned.</p>
+            <div class="tag-list"><span>Python</span><span>FastAPI</span></div>
+            <a class="text-link" href="https://github.com/tanya-veremchuk" target="_blank" rel="noreferrer">GitHub profile ↗</a>
+          </article>
+
+          <article class="project-card" id="project-2">
+            <div class="project-topline"><span>02</span><span class="project-symbol">⌁</span></div>
+            <h3>Another project</h3>
+            <p></p>
+            <div class="tag-list"><span>TypeScript</span><span>React</span></div>
+            <a class="text-link" href="https://github.com/tanya-veremchuk" target="_blank" rel="noreferrer">GitHub profile ↗</a>
+          </article>
+
+          <article class="project-card" id="project-3">
+            <div class="project-topline"><span>03</span><span class="project-symbol">✳</span></div>
+            <h3>Something in progress</h3>
+            <p></p>
+            <div class="tag-list"><span>Rust</span><span>Learning</span></div>
+            <a class="text-link" href="https://github.com/tanya-veremchuk" target="_blank" rel="noreferrer">GitHub profile ↗</a>
+          </article>
+        </div>
+        <p class="tiny-note"></p>
+      </section>
+
+      <section class="wiki-section" id="currently">
+        <p class="section-kicker"></p>
+        <h2>Currently</h2>
+        <div class="currently-list">
+          <div><span class="list-icon">🌱</span><p><strong>Learning</strong><br></p></div>
+          <div><span class="list-icon">🛠️</span><p><strong>Building</strong><br>Small projects and web apps with Python, FastAPI, and React.</p></div>
+          <div><span class="list-icon">🐧</span><p><strong>Considering</strong><br>Installing Linux alongside Windows. The curiosity is real; the courage is loading…</p></div>
+        </div>
+      </section>
+
+      <section class="wiki-section" id="toolbox">
+        <p class="section-kicker">THINGS I USE</p>
+        <h2>My toolbox</h2>
+        <p class="section-lead">A growing collection of languages and tools I've used or am learning.</p>
+        <div class="tool-groups">
+          <div class="tool-group"><h3>Most familiar</h3><div class="tag-list"><span>Python</span><span>FastAPI</span><span>HTML</span><span>CSS</span></div></div>
+          <div class="tool-group"><h3>Exploring</h3><div class="tag-list"><span>TypeScript</span><span>React</span><span>Rust</span></div></div>
+          <div class="tool-group"><h3>Also know</h3><div class="tag-list"><span>Java</span></div></div>
+        </div>
+      </section>
+
+      <section class="wiki-section" id="setup">
+        <p class="section-kicker">THE CURRENT WORKSPACE</p>
+        <h2>My setup</h2>
+        <div class="setup-card">
+          <div class="setup-row"><span>Operating system</span><strong>Windows</strong></div>
+          <div class="setup-row"><span>Linux status</span><strong>Thinking about dual-booting 🐧</strong></div>
+          <div class="setup-row"><span>Favourite backend languages</span><strong>Python/Java</strong></div>
+          <div class="setup-row"><span>Editor / tools</span><strong>Add your favourites here</strong></div>
+        </div>
+      </section>
+
+      <section class="wiki-section" id="contact">
+        <p class="section-kicker">THE EXIT</p>
+        <h2>Find me elsewhere</h2>
+        <p>
+          Have a question, want to talk about a project, or just want to say hi?
+          You can find me on GitHub.
+        </p>
+        <a class="contact-link" href="https://github.com/tanya-veremchuk" target="_blank" rel="noreferrer">
+          <span>GitHub</span><span aria-hidden="true">↗</span>
+        </a>
+      </section>
+
+      <footer class="site-footer">
+        <span>Made by Tanya, with curiosity and a few bugs.</span>
+        <a href="#top">Back to top</a>
+        <span>© <span id="year">2026</span></span>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
