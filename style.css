@@ -138,6 +138,13 @@ a:focus-visible, summary:focus-visible, button:focus-visible {
   background: var(--panel);
   transform: rotate(1deg);
 }
+.hero-figure img {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 16px;
+}
 .avatar-frame img { display: block; width: 100%; image-rendering: pixelated; border-radius: 7px; }
 .avatar-frame figcaption { padding-top: 9px; color: var(--soft); font-size: 10px; text-align: center; }
 
