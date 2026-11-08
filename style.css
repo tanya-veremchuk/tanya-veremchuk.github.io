@@ -153,7 +153,7 @@ a:focus-visible, summary:focus-visible, button:focus-visible {
   text-align: center; 
 }
 
-.wiki-section { margin: 0 0 105px; scroll-margin-top: 35px; }
+.wiki-section { margin: 0 0 50px; scroll-margin-top: 35px; }
 .section-kicker { margin-bottom: 8px; }
 .wiki-section h2 { margin: 0 0 20px; font-size: 27px; font-weight: 620; letter-spacing: -.025em; }
 .wiki-section p { color: var(--muted); font-size: 14px; }
