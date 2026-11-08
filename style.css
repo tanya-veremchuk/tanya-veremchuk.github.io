@@ -132,21 +132,26 @@ a:focus-visible, summary:focus-visible, button:focus-visible {
 }
 .avatar-frame {
   margin: 0;
-  padding: 12px;
+  padding: 10px;
   border: 1px solid var(--border);
   border-radius: 13px;
   background: var(--panel);
   transform: rotate(1deg);
 }
-.hero-figure img {
-  width: 190px;
-  height: 190px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 16px;
+
+.avatar-frame img { 
+  display: block; 
+  width: 100%; 
+  image-rendering: pixelated; 
+  border-radius: 7px; 
 }
-.avatar-frame img { display: block; width: 100%; image-rendering: pixelated; border-radius: 7px; }
-.avatar-frame figcaption { padding-top: 9px; color: var(--soft); font-size: 10px; text-align: center; }
+
+.avatar-frame figcaption { 
+  padding-top: 9px; 
+  color: var(--soft); 
+  font-size: 10px; 
+  text-align: center; 
+}
 
 .wiki-section { margin: 0 0 105px; scroll-margin-top: 35px; }
 .section-kicker { margin-bottom: 8px; }
